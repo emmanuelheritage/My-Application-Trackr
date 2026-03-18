@@ -1,0 +1,27 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html
+{
+    font-size: 62.5%;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#profilechanges
+{
+    display: flex;
+    gap: 1.5rem;
+}
+#input
+{
+    display: flex;
+    flex-direction: column;
+}
