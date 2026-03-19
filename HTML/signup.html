@@ -8,68 +8,68 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
-     <div class="general-container">
-    <div class= "form-container">
-        <div class="form-title">  
-        <h2>Sign Up for <span class="highlights">MyApplicatn Trackr</span></h2>
-        <p>Fill in your details to get started</p>
-        <div class="google">
-    <button class="google-btn">
-     <i class="fab fa-google"></i> Sign up with Google
-    </button>
-    <p class="divider">or continue with</p>
+    <div class="general-container">
+        <div class="form-container">
+
+            <!-- Title -->
+            <div class="form-title">
+                <h2>Sign Up for <span class="highlights">MyApplicatn Trackr</span></h2>
+                <p>Fill in your details to get started</p>
+            </div>
+
+            <!-- Google Button -->
+            <button class="google-btn">
+                <i class="fab fa-google"></i> Sign up with Google
+            </button>
+
+            <!-- Divider -->
+            <p class="divider">or continue with</p>
+
+            <!-- Form -->
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" placeholder="John Doe"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" placeholder="johndoe@gmail.com"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Create Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="password" placeholder="Create your password"/>
+                        <i class="fas fa-eye-slash" id="togglePassword"></i>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="confirmPassword" placeholder="Confirm your password"/>
+                        <i class="fas fa-eye-slash" id="toggleConfirmPassword"></i>
+                    </div>
+                </div>
+
+                <!-- Terms -->
+                <div class="accept-terms">
+                    <input type="checkbox" id="terms"/>
+                    <label for="terms">I have read and understand the terms</label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="signup-button">Create an Account →</button>
+            </form>
+
+            <!-- Log in link -->
+            <div class="sign-up">
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+
         </div>
-
-    <form>
-    
-    <div class="form-group">
-        <label for="fullname">Full Name</label>
-        <input 
-        type="fullname" 
-        id="fullname"
-        placeholder="John Doe"/>
-     </div>
-
-    <div class="form-group">
-    <label for="email">Email address</label>
-    <input type="email" id="email" placeholder="johndoe@gmail.com" />
     </div>
-
-    <div class="form-group">
-  <label for="password">Create Password</label>
-  <div class="password-wrapper">
-    <input type="password" id="password" placeholder="Create your password"/>
-    <i class="fas fa-eye" id="togglePassword"></i>
-  </div>
-</div>
-
-     <div class="form-group">
-  <label for="password">Confirm Password</label>
-  <div class="password-wrapper">
-    <input type="password" id="password" placeholder="Confirm your password"/>
-    <i class="fas fa-eye" id="togglePassword"></i>
-  </div>
-</div>
-
-     <div class="terms-box">
-      <div class="accept-terms">
-        <input type="checkbox" id="acceptterms" name="acceptterms">
-        <label for="acceptterms">I have read and understand the terms</label>
-        </div>
-    </div>
-
-    <button type="button" class="signup-button">Create an Account
-    <i class="fa-solid fa-arrow-right"></i>
-    </button>
-    </div>
-    
-    <div class="sign-up">
-        <p>Already have an account? <a href="">Log in</a></p>
-    </div>
-   </form>
-</div>
-<div>
-</div>
-    
+    <script src="../JavaScript/signup.js"></script>
 </body>
 </html>
