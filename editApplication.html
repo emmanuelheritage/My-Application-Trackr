@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Application</title>
+    <script src="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="editApplication.css">
+</head>
+<body>
+     <nav class="nav-section">           
+            <div class="nav-left">
+                 <span class="back">
+                <i class="ph ph-arrow-left back-arrow"></i>
+            </span>
+            <span class="logo">
+                <img src="Images/MyApplicationTracker-logo.png" alt="Logo">
+            </span>
+                <span>
+                    <i class="ph-fill ph-house-line icon"></i>
+                </span>
+            </span>
+            </div>  
+           
+            <div class="nav-right">  
+                <span class="notification-icon">`
+                    <i class="ph-fill ph-bell icon"></i>
+                    <span class="notification"></span>
+                </span>
+                <span class="user-icon">
+                    <i class="ph-fill ph-user"></i>
+                </span>
+            </div>
+            </nav>
+        <div class="form-section">
+            <form action="">
+               <h3 class="form-title">Edit Application</h3>
+               <div class="input-section">
+                <div class="input-div">
+                <label for="company-name">Company name <small class="required-tag">*</small></label>
+               <input type="text" name="" id="company-name" class="input-field">
+                </div>
+                <div class="input-div">
+                <label for="job-title">Job Title/Role <small class="required-tag">*</small></label>
+               <input type="text" name="" id="job-title" placeholder="E.g. Graphics Designer" class="input-field">
+                </div>
+                <div class="input-div">
+                <label for="date-applied">Date Applied <small class="required-tag">*</small></label>
+               <input type="date" name="" id="date-applied" class="input-field">
+                </div>
+                <div class="input-div">
+                <label for="application-type">Application Type <small class="required-tag">*</small></label>
+               <select name="" id="application-type" class="input-field">
+                <option value="Select Type">Select Type</option>
+                <option value="intership">Internship</option>
+                <option value="job">Job</option>
+               </select>
+                </div>
+                <div class="input-div">
+                <label for="platform-applied">Platform Applied through</label>
+               <select name="" id="platform-applied" class="input-field" >
+                <option value="Select Type">Select Type</option>
+                <option value="Select Type">Linkedin</option>
+                <option value="intership">Company portal</option>
+                <option value="job">Job Boards</option>
+                <option value="job">Company's career page</option>
+               </select>
+               </div>
+                <div class="input-div">
+                <label for="application-status">Application status</label>
+               <select name="" id="application-status" class="input-field">
+                <option value="Select Type">Select status</option>
+                <option value="intership">Pending follow-up</option>
+                <option value="job">First level</option>
+                <option value="job">Assessement</option>
+                <option value="job">Interview stage</option>
+               </select>
+                </div>
+                <div class="input-div">
+                <label for="cv-version">CV Version Name</label>
+               <input type="text" name="" id="cv-version" placeholder="E.g. My Graphics design CV" class="input-field">
+               </div>
+               <div class="input-div">
+               <label for="follow-up-date">Follow Up Date</label>
+               <input type="date" name="" id="follow-up-date" class="input-field">
+               </div>
+                </div>         
+        </form>
+        <p class="required-note">* indicates required field</p>
+        </div>
+        <div class="divider"></div>
+        <div class="lower-section">
+           <a href="followUp.html">
+             <button class="update">
+                Update Application
+            </button>
+            </a>
+            <button class="cancel">Cancel</button>
+        </div>
+
+    </div>
+
+
+    
+</body>
+</html>
