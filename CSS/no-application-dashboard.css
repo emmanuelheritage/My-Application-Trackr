@@ -1,4 +1,3 @@
-/* Layout */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Roboto', sans-serif; background: #fff; font-weight: 400; }
 .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
@@ -29,7 +28,6 @@ nav {
 .logo img { height: 40px; }
 
 
-/* .main-header{display: flex; justify-content: center;} */
 
 
 /* Status Pills */
@@ -51,7 +49,6 @@ nav {
 
 }
 
-/* Manage Applications Bar */
 h1 { font-size: 28px; margin: 30px 0 20px; font-weight: 700; }
 
 .filter-bar {
@@ -61,7 +58,6 @@ h1 { font-size: 28px; margin: 30px 0 20px; font-weight: 700; }
   align-items: center;
   border-bottom: 1px solid #eee;
   padding-bottom: 5px;
-  /* margin-bottom: 60px; */
 }
 
 .badge {
@@ -100,13 +96,9 @@ h1 { font-size: 28px; margin: 30px 0 20px; font-weight: 700; }
 
 .line{width: 1322.0136696502934;
 height: 0px;
-/* top: 938px; */
-/* left: 59px; */
-/* angle: 0.26 deg; */
 opacity: 1;
 border-width: 1px;
 border: 1px solid #838383;
-/* margin: 50px 100px; */
 }
 
 footer{
