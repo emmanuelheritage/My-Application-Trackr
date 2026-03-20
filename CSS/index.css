@@ -249,9 +249,12 @@ h1 span  {
 /* Responsive adjustments */
 @media (max-width: 1024px) {
     .testimonial-grid { grid-template-columns: repeat(2, 1fr); }
+    .grid { grid-template-columns: repeat(2, 1fr); }
 }
-@media (max-width: 600px) {
-    .testimonial-grid { grid-template-columns: 1fr; }
+@media (max-width: 660px) {
+    .testimonial-grid { grid-template-rows: 1fr; 
+    }
+    .grid { grid-template-columns:  1fr }
 }
 
 
