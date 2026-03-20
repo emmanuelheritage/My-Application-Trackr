@@ -176,3 +176,14 @@ body{
     border: none;
     transition:all  ease-out 0.2s ;
 }
+.error-message{
+    display: block;
+    color: red;
+    margin-top: 10px;
+}
+.input-error{
+    border: 2px solid red;
+}
+.input-success{
+    border: 2px solid green;
+}
