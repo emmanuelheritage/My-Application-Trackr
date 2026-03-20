@@ -1,4 +1,4 @@
-const updateApplication = document.querySelector('.update');
+const submitForm = document.querySelector('form');
 const companyName = document.getElementById('company-name');
 const jobTitle = document.getElementById('job-title');
 const dateApplied = document.getElementById('date-applied');
@@ -6,7 +6,8 @@ const applicationType = document.getElementById('application-type');
 const errorMessages = document.querySelectorAll('.error-message');
 
 
-updateApplication.addEventListener('click', (e) => {
+submitForm.addEventListener('submit', (e) => {
+    e.preventDefault();
     if (validateForm()) {
         window.location.href = 'followUp.html';
     };
