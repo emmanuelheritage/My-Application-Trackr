@@ -48,31 +48,35 @@
                 <div class="input-div">
                 <label for="company-name">Company name <small class="required-tag">*</small></label>
                <input type="text" name="" id="company-name" class="input-field">
+               <p class="error-message"></p>
                 </div>
                 <div class="input-div">
                 <label for="job-title">Job Title/Role <small class="required-tag">*</small></label>
                <input type="text" name="" id="job-title" placeholder="E.g. Graphics Designer" class="input-field">
+               <p class="error-message"></p>
                 </div>
                 <div class="input-div">
                 <label for="date-applied">Date Applied <small class="required-tag">*</small></label>
                <input type="date" name="" id="date-applied" class="input-field">
+               <p class="error-message"></p>
                 </div>
                 <div class="input-div">
                 <label for="application-type">Application Type <small class="required-tag">*</small></label>
                <select name="" id="application-type" class="input-field">
-                <option value="Select Type">Select Type</option>
+                <option value="">Select Type</option>
                 <option value="intership">Internship</option>
                 <option value="job">Job</option>
                </select>
+               <p class="error-message"></p>
                 </div>
                 <div class="input-div">
                 <label for="platform-applied">Platform Applied through</label>
                <select name="" id="platform-applied" class="input-field" >
-                <option value="Select Type">Select Type</option>
-                <option value="Select Type">Linkedin</option>
-                <option value="intership">Company portal</option>
-                <option value="job">Job Boards</option>
-                <option value="job">Company's career page</option>
+                <option value="">Select Type</option>
+                <option value="linkedin">Linkedin</option>
+                <option value="company-portal">Company portal</option>
+                <option value="job-boards">Job Boards</option>
+                <option value="career-page">Company's career page</option>
                </select>
                </div>
                 <div class="input-div">
@@ -93,23 +97,23 @@
                <label for="follow-up-date">Follow Up Date</label>
                <input type="date" name="" id="follow-up-date" class="input-field">
                </div>
-                </div>         
-        </form>
+                </div>  
+        </div>
         <p class="required-note">* indicates required field</p>
         </div>
         <div class="divider"></div>
         <div class="lower-section">
-           <a href="followUp.html">
-             <button class="update">
+             <button type="submit" class="update">
                 Update Application
             </button>
-            </a>
             <button class="cancel">Cancel</button>
         </div>
 
-    </div>
-
-
+       
+        </form>
+        
+        
+<script src="../JavaScript/editApplication.js"></script>
     
 </body>
 </html>
