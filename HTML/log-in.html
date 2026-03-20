@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2"></script>
+  <link rel="stylesheet" href="log-in.css">
+  <title>Log-in page</title>
+</head>
+<body>
+  <div class="container">
+    <div class="head-section">
+      <p>Log in for <span class="app-trackr-head">MyApplicatn Trackr</span></p>
+      <p>Enter your credentials to get started</p>
+      <button><img src="google logo.png" alt=""><a href="#">Sign up with google</a></button>
+     <div class="lines-p">
+    <div class="left-line"></div><p>Or Continue with</p><div class="right-line"></div>
+  </div>
+    </div>
+  <form id="loginForm" action="Login">
+   <div class="email-password-container">
+     <label id="email" for="email">Email Address 
+       <input type="email" id="emailInput" required>
+     </label>
+    <div class="password">
+      <label id="password" for="password">Password
+        <input type="password" id="passwordInput" required> <i class="ph ph-eye-slash" id="togglePassword"></i>
+      </label></div>
+    </div>
+      <p class="forgotten-password"><a href="#">Forgotten your password?</a></p>
+    <div class="bottom-section">
+      <button class="login-btn" type="submit">Login<i class="ph ph-arrow-right"></i></button>
+      <p><a href="#">Don't have an account? Sign up</a></p>
+    </div>
+  </form>
+</div>
+ <script src="login.js"></script>
+</body>
+</html>
