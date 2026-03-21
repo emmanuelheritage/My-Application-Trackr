@@ -5,10 +5,11 @@ const dateApplied = document.getElementById('date-applied');
 const applicationType = document.getElementById('application-type');
 const errorMessages = document.querySelectorAll('.error-message');
 
-
+// validate edit application form on submit
 submitForm.addEventListener('submit', (e) => {
     e.preventDefault();
     if (validateForm()) {
+        alert('Application updated successfully!');
         window.location.href = 'followUp.html';
     };
 });
@@ -46,6 +47,8 @@ function validateForm() {
     return errors.length === 0;
 }
 
+// clear error messages and red borders on input when user starts typing;
+
 const focusableElements = [companyName, jobTitle, dateApplied, applicationType];
 
 focusableElements.forEach(input => {
@@ -57,4 +60,19 @@ focusableElements.forEach(input => {
             });
         }
     });
+});
+
+// cancle edit application
+const cancelBtn = document.querySelector(".cancel")
+const cancelConfirmation = document.querySelector(".cancel-confirmation");
+cancelBtn.addEventListener('click', () => {
+    cancelConfirmation.classList.add("active");
+});
+
+document.querySelector(".yes").addEventListener('click', () => {
+        cancelConfirmation.classList.remove("active");
+        submitForm.reset();
+});
+document.querySelector(".no").addEventListener('click', () => {    
+    cancelConfirmation.classList.remove("active");
 });
