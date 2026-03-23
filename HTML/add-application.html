@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add application</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&family=Montserrat:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/CSS/add-application.css">
+</head>
+<body>
+
+        <!-- Header -->
+ <header class="header">
+  <nav>
+    <div class="nav-left">
+      <a href="no-application-dashboard.html"><img src="/Images/Frame-57.png" alt="Menu" class="icon"></a>
+      <a href="Landing_Page.html" class="logo"><img src="/Images/project-logo.png" alt="Logo"></a>
+      <a href="Landing_Page.html"><img src="/Images/mdi_home.png" alt="Home" class="icon"></a>
+    </div>
+    <div class="nav-right">
+      <a href="#"><img src="/Images/iconoir_bell-notification-solid (1).png" alt="Notifications" class="icon"></a>
+      <a href="profile-settings.html"><img src="/Images/iconamoon_profile-fill.png" alt="Profile" class="icon"></a>
+    </div>
+  </nav>
+ </header>
+
+   
+  
+<main>
+    <div class="container"> 
+        <!-- Form Area -->
+        <form class="tracker-form" id="applicationForm">
+            <div class="full-width">
+                <label for="companyName">Company Name <span class="required">*</span></label>
+                <input type="text" id="companyName" name="companyName" required>
+            </div>
+
+            <div class="form-row">
+                <div class="half-width">
+                    <label for="jobTitle">Job Title/Role <span class="required">*</span></label>
+                    <input type="text" id="jobTitle" name="jobTitle" placeholder="Eg: Graphic Designer" required>
+                </div>
+                <div class="half-width">
+                    <label for="dateApplied">Date Applied <span class="required">*</span></label>
+                    <div class="input-with-icon">
+                        <input type="date" id="dateApplied" name="dateApplied" required>
+                        <span class="icon-trigger"><img class="calendar-icon" src="/Images/pixel_calender-solid.png" alt="calendar-icon"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="half-width">
+                    <label for="appType">Application Type (Internship/Job) <span class="required">*</span></label>
+                    <select id="appType" name="appType" required>
+                        <option value="" disabled selected>Select application type</option>
+                        <option value="internship">Internship</option>
+                        <option value="job">Full-time Job</option>
+                        <option value="contract">Contract</option>
+                    </select>
+                </div>
+                <div class="half-width">
+                    <label for="platform">Platform Applied Through</label>
+                    <select id="platform" name="platform">
+                        <option value="" disabled selected>Select platform</option>
+                        <option value="linkedin">LinkedIn</option>
+                        <option value="indeed">Indeed</option>
+                        <option value="company_site">Company Website</option>
+                        <option value="referral">Referral</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="half-width">
+                    <label for="status">Application Status</label>
+                    <select id="status" name="status">
+                        <option value="" disabled selected>Select status</option>
+                        <option value="applied">Applied</option>
+                        <option value="interviewing">Interviewing</option>
+                        <option value="offered">Offered</option>
+                        <option value="rejected">Rejected</option>
+                    </select>
+                </div>
+                <div class="half-width">
+                    <label for="cvVersion">CV Version Name</label>
+                    <input type="text" id="cvVersion" name="cvVersion" placeholder="Eg: MyGraphic design CV">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="half-width">
+                    <label for="followUp">Follow-up Date</label>
+                    <div class="input-with-icon">
+                        <input type="date" id="followUp" name="followUp">
+                        <span class="icon-trigger"><img class="calendar-icon" src="/Images/pixel_calender-solid.png" alt="calendar-icon"></span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="footnote">* indicates required fields</p>
+            <hr class="divider-bottom">
+
+            <div class="button-group">
+                <button type="submit" class="btn-add">Add Application</button>
+                <button type="button" class="btn-cancel" id="cancelBtn">Cancel</button>
+            </div>
+        </form>
+    </div>
+</main>
+
+
+<script src="/JavaScript/add-application.js"> </script>
+</body>
+</html>

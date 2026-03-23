@@ -24,7 +24,6 @@ body {
     width: 1200px;
     justify-content: center;
     align-items: center;
-    border-bottom: #888;
 }
 .form-container {
     background-color: #f6f6f9;
@@ -124,6 +123,7 @@ input[type="password"]::-webkit-strong-password-auto-fill-button {
     font-weight: 400;
     border: none;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .signup-button i {
