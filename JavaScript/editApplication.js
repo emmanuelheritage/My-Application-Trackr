@@ -76,3 +76,10 @@ document.querySelector(".yes").addEventListener('click', () => {
 document.querySelector(".no").addEventListener('click', () => {    
     cancelConfirmation.classList.remove("active");
 });
+
+// navigate back to the main board
+    const backToMainboard = document.queryselector(".back");
+    backToMainboard.addEventListener('click', () => {
+        window.location.href = 'mainboard.html';
+    });
+        
