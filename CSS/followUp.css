@@ -13,6 +13,8 @@ body{
     padding: 15px 10px;
     background-color: #ffffff;
     box-shadow: 0px 2px 2px #00000040;
+    position: sticky;
+    top: 0;
 }
 
 a{
@@ -218,4 +220,356 @@ a{
 .edit-delete > span > i{
     color: white;
     font-size: 22px;
+}
+
+/* Responsiveness for large screens */
+
+@media (max-width:1200px){
+
+.follow-ups{
+    padding:10px 60px;
+}
+
+.job-applications{
+    margin:8px 20px;
+}
+
+.job-div > h3{
+    font-size:26px;
+}
+
+.job-div > h4{
+    font-size:18px;
+}
+
+.upcoming,
+.overdue,
+.add-button{
+    font-size:22px;
+}
+
+.company-icon > img{
+    height:60px;
+    width:60px;
+}
+
+}
+
+/* Responsiveness for medium screens and large tablets */
+
+@media (max-width:992px){
+
+.follow-ups{
+    padding:10px 30px;
+}
+
+.buttons{
+    flex-wrap:wrap;
+}
+
+.filter-buttons{
+    gap:10px;
+}
+
+.add-button{
+    font-size:20px;
+    padding:10px 20px;
+}
+
+.upcoming,
+.overdue{
+    font-size:20px;
+}
+
+.applications{
+    grid-template-columns:1fr;
+    gap:20px;
+}
+
+.job-div > h3{
+    font-size:24px;
+}
+
+.job-div > h4{
+    font-size:16px;
+}
+
+}
+/* Responsiveness for small tablets */
+
+@media (max-width:768px){
+
+.nav-section{
+    padding:10px;
+}
+
+.icon{
+    font-size:35px;
+}
+a{
+    padding: 5px;
+    margin-right: 15px;
+}
+
+.user-icon > i{
+    font-size:30px;
+}
+
+.follow-ups{
+    padding:10px 20px;
+}
+
+.follow-ups > h2{
+    font-size:30px;
+}
+
+.follow-ups > small{
+    font-size:16px;
+}
+
+.buttons{
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.filter-buttons{
+    width:100%;
+}
+
+.add-followup{
+    margin-left:0;
+    width:100%;
+}
+
+.add-button{
+    width:100%;
+    justify-content:center;
+}
+
+.job-applied{
+    padding:20px;
+}
+
+}
+
+/* Responsiveness for mobile phones */
+
+@media (max-width:480px){
+.nav-section{
+    padding:5px;
+}
+
+a{
+    background-color: #D9D9D9;
+    padding: 5px;
+    margin-right: 10px;
+}
+.back-arrow{
+    font-size: 40px;
+}
+
+.nav-left{
+    gap:5px;
+}
+
+.logo > img{
+    height:30px;
+}
+
+.icon{
+    font-size:20px;
+}
+
+.user-icon > i{
+    font-size:20px;
+}
+
+.notification{
+    width:8px;
+    height:8px;
+    font-size:5px;
+}
+
+.follow-ups > h2{
+    font-size:24px;
+}
+
+.follow-ups > small{
+    font-size:14px;
+}
+
+.upcoming,
+.overdue{
+    font-size:16px;
+    padding:8px 12px;
+}
+
+.add-button{
+    font-size:16px;
+    padding:10px;
+}
+
+.job-applied{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
+}
+
+.edit-delete{
+    margin-left:0;
+}
+
+.company-icon > img{
+    height:50px;
+    width:50px;
+}
+
+.job-div > h3{
+    font-size:20px;
+}
+
+.job-div > h4{
+    font-size:14px;
+}
+
+.search-bar input{
+    padding:14px;
+}
+
+}
+
+/* Responsiveness for smaller mobile devices */
+
+@media (max-width:366px){
+
+body{
+    overflow-x:hidden;
+}
+
+.nav-section{
+    padding:5px;
+}
+a{
+    background-color: #D9D9D9;
+    padding: 5px;
+    margin-right: 10px;
+}
+.back-arrow{
+    font-size: 20px;
+}
+.logo > img{
+    height:25px;
+    width: auto;
+}
+.nav-right{
+    gap:10px;
+}
+
+.icon{
+    font-size:20px;
+}
+
+.user-icon > i{
+    font-size:20px;
+}
+
+.follow-ups{
+    padding:10px;
+}
+
+.follow-ups > h2{
+    font-size:20px;
+}
+
+.follow-ups > small{
+    font-size:12px;
+}
+
+/* stack filter buttons */
+
+.filter-buttons{
+    flex-direction:column;
+    width:100%;
+}
+
+.upcoming,
+.overdue{
+    width:100%;
+    font-size:14px;
+    padding:8px;
+}
+
+/* add button */
+
+.add-button{
+    width:100%;
+    font-size:14px;
+    padding:8px;
+}
+
+/* fix job card layout */
+
+.job-applications{
+    margin:8px 10px;
+}
+
+.job-applied{
+    flex-direction:column;
+    align-items:flex-start;
+    padding:15px;
+}
+
+.company-icon > img{
+    height:40px;
+    width:40px;
+}
+
+.job-div > h3{
+    font-size:18px;
+    word-break:break-word;
+}
+
+.job-div > h4{
+    font-size:13px;
+}
+
+.edit-delete{
+    gap:10px;
+}
+
+.search-bar input{
+    padding:10px;
+    font-size:14px;
+}
+
+}
+
+/* Responsiveness for ultra-small mobile devices */
+
+@media (max-width:300px){
+a{
+    padding: 2px;
+    margin-right: 5px;
+}
+.back-arrow{
+    font-size: 15px;
+}
+.logo > img{
+    height:18px;
+    width: auto;
+}
+.nav-right{
+    gap: 3px;
+}
+
+.icon{
+    font-size:17px;
+}
+
+.user-icon > i{
+    font-size:17px;
+}
+.follow-ups > h2{
+    font-size:18px;
+}
 }
