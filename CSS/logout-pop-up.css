@@ -6,12 +6,15 @@
 body{
   font-family: Arial, Helvetica, sans-serif;
   background-color: grey;
+ 
+}
+.wrapper{
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 .div-container{
-  top: 0;
-  position: fixed;
-  top: 0;
-  left: 25%;
   padding: 20px;
   width: 350px;
   height: 180px;
@@ -24,7 +27,7 @@ body{
   display: flex;
   flex-direction: column;
   gap: 10px;
-  font-size: 14px;
+  font-size: 18px;
   align-items: center;
   justify-content: center;
   background-color: #407bff;
@@ -39,7 +42,7 @@ body{
   border: none;
   cursor: pointer;
   background: white;
-  padding: 2px 6px;
+  padding: 4px 6px;
   border-radius: 3px;
   font-size: 12px;
 }
