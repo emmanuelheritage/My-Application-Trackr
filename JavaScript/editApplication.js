@@ -78,8 +78,12 @@ document.querySelector(".no").addEventListener('click', () => {
 });
 
 // navigate back to the main board
+function goBackToMainboard(){
+     window.location.href = 'mainboard.html';
+}
+    
     const backToMainboard = document.queryselector(".back");
     backToMainboard.addEventListener('click', () => {
-        window.location.href = 'mainboard.html';
+       
     });
         
