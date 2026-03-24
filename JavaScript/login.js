@@ -32,5 +32,5 @@ form.addEventListener("submit", (e) => {
   alert("Login successful!");
 
   //Redirect (optional)
-  window.location.href = "dashboard.html";
+  window.location.href = "mainboard.html";
 });
