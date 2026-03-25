@@ -1,7 +1,7 @@
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* html, body {
@@ -9,80 +9,91 @@ box-sizing: border-box;
 } */
 
 body {
-    background-color: #f5f3ef;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #f5f3ef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
 }
 
 .general-container {
-    background-color: #f6f6f9;
-    display: flex;
-    /* height: 800px;
+  background-color: #f6f6f9;
+  display: flex;
+  /* height: 800px;
     width: 1200px; */
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 .form-container {
-    background-color: #f6f6f9;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 800px;
-    padding: 40px;
-    border-radius: 8px;
-    margin: 8px 8px;
-    height: 700px;
-    margin-left: 24px;
-    border: 1px solid #B9B9B9;
+  background-color: #f6f6f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 800px;
+  padding: 40px;
+  border-radius: 8px;
+  margin: 8px 8px;
+  height: 700px;
+  margin-left: 24px;
+  border: 1px solid #b9b9b9;
 }
 
 .form-title {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    margin-bottom: 16px;
-    color: #3c3c3c;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 16px;
+  color: #3c3c3c;
 }
 
 .highlights {
-    background: linear-gradient(to right, #407BFF, #23E363);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(to right, #407bff, #23e363);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .form-title p {
-    color: rgba(0, 0, 0, 0.6);
-    font-size: 16px;
-    margin-bottom: 8px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  margin-bottom: 8px;
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-bottom: 8px;
-    margin-top: 16px;
-    text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 8px;
+  margin-top: 16px;
+  text-align: left;
 }
 
 .form-group input {
-    display: inline-block;
-    padding: 12px 15px;
-    border-radius: 8px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .form-group input:focus {
-    outline: none;
+  outline: none;
 }
 
 .form-group label {
-    font-size: 16px;
-    font-weight: 500;
+  font-size: 16px;
+  font-weight: 500;
 }
 .password-wrapper {
   position: relative;
@@ -91,7 +102,7 @@ body {
 
 .password-wrapper input {
   width: 100%;
-  padding-right: 40px; 
+  padding-right: 40px;
 }
 
 .password-wrapper i {
@@ -115,27 +126,34 @@ input[type="password"]::-webkit-strong-password-auto-fill-button {
 }
 
 .signup-button {
-    width: 100%;
-     background: linear-gradient(to right, #407BFF, #23E363);
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    font-weight: 400;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
+  width: 100%;
+  background: linear-gradient(to right, #407bff, #23e363);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.signup-button:disabled,
+.signup-button.is-loading {
+  opacity: 0.7;
+  cursor: not-allowed;
 }
 
 .signup-button i {
-    font-size: 14px;
-    color: #f6f6f9;
-    margin-right: 32px;
+  font-size: 14px;
+  color: #f6f6f9;
+  margin-right: 32px;
 }
 
 .terms-box {
-    justify-content: space-between;
-    display: flex;
-    width: 100%;
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
 }
 .accept-terms {
   margin-bottom: 24px;
@@ -153,24 +171,49 @@ input[type="password"]::-webkit-strong-password-auto-fill-button {
 
 .accept-terms label {
   font-size: 14px;
-  color:#B9B9B9;
+  color: #b9b9b9;
   gap: 5px;
   user-select: none;
 }
 
+.form-message {
+  display: none;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.form-message.is-visible {
+  display: block;
+}
+
+.form-message.error {
+  background-color: #fde7e8;
+  color: #8f1d22;
+  border: 1px solid #f4b8bc;
+}
+
+.form-message.success {
+  background-color: #e7f7ec;
+  color: #176b2e;
+  border: 1px solid #b4e4c1;
+}
 
 .button-google {
-    width: 100%;
-    color: rgb(67, 66, 66);
-    padding: 16px;
-    font-size: 16px;
-    font-weight: 400;
-    border: 1px solid #ccc8d0;
-    border-radius: 8px;
-    margin-top: 16px;
-    margin-bottom: 8px;
-    background-color: #f6f6f9;
-    gap: 4px;
+  width: 100%;
+  color: rgb(67, 66, 66);
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid #ccc8d0;
+  border-radius: 8px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  background-color: #f6f6f9;
+  gap: 4px;
 }
 .google-btn {
   background: #ffffff;
@@ -189,7 +232,7 @@ input[type="password"]::-webkit-strong-password-auto-fill-button {
 }
 
 .google-btn i {
-  background: linear-gradient(135deg, #EA4335, #FBBC05, #34A853, #4285F4);
+  background: linear-gradient(135deg, #ea4335, #fbbc05, #34a853, #4285f4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -221,18 +264,18 @@ input[type="password"]::-webkit-strong-password-auto-fill-button {
 }
 
 .sign-up {
-    text-align: center;
-    margin-top: 8px;
+  text-align: center;
+  margin-top: 8px;
 }
 
 .sign-up p {
-    color: rgb(67, 66, 66);;
-    font-size: 14px;
-    margin: 0;
+  color: rgb(67, 66, 66);
+  font-size: 14px;
+  margin: 0;
 }
 
 .sign-up a {
-    color: #7c5ea3;
-    text-decoration: none;
-    font-weight: 400;
+  color: #7c5ea3;
+  text-decoration: none;
+  font-weight: 400;
 }

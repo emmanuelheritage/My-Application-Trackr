@@ -1,18 +1,18 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-body{
+body {
   font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
   background: white;
 }
 /* This is the container having all the content */
-.container{
+.container {
   border: 2px solid lightblue;
   width: 500px;
   padding: 30px;
@@ -20,26 +20,26 @@ body{
   border-radius: 6px;
 }
 /* This head section carries the two paragraph texts above, google sign-up and continue with */
-.head-section{
+.head-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.head-section p{
+.head-section p {
   font-size: 20px;
 }
 
-.head-section p:nth-child(2){
+.head-section p:nth-child(2) {
   font-size: 10px;
   margin-bottom: 10px;
 }
-.app-trackr-head{
+.app-trackr-head {
   background: linear-gradient(90deg, #4facfe, #00fe2a);
--webkit-background-clip: text;  
--webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.head-section button{
+.head-section button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,78 +50,99 @@ body{
   border-radius: 6px;
   margin-bottom: 15px;
 }
-.head-section button a{
+.head-section button a {
   text-decoration: none;
   color: black;
   font-weight: bold;
 }
 /* lines-p are the two line that surroun 'or continue with' */
-.lines-p{
+.lines-p {
   display: flex;
-justify-content: center;
-align-items: center;
-gap: 10px;
-margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 .left-line,
-.right-line{
+.right-line {
   width: 150px;
   border: 1px solid rgba(128, 128, 128, 0.5);
 }
 /* email-pass-container carries both the email and password  */
-.email-password-container{
+.email-password-container {
   display: flex;
   gap: 12px;
-  flex-direction:column ;
+  flex-direction: column;
 }
-.email-password-container input{
+.email-password-container input {
   width: 100%;
   padding: 7px;
   border: 1px solid rgba(128, 128, 128, 0.5);
   border-radius: 6px;
-    outline: none;
+  outline: none;
 }
-.email-password-container label{
+.email-password-container label {
   font-size: 12px;
   font-weight: bold;
 }
 /* password is the container housing the eye slash for positioning */
-.password{
+.password {
   position: relative;
 }
-.ph-eye-slash{
+.ph-eye-slash {
   position: absolute;
   color: grey;
-   top: 25px;
-   right: 15px;
+  top: 25px;
+  right: 15px;
   font-size: 16px;
   font-weight: bold;
 }
-.forgotten-password{
+.forgotten-password {
   display: flex;
   justify-content: end;
   margin-top: 2px;
   margin-bottom: 30px;
-    outline: none;
+  outline: none;
 }
-.forgotten-password a{
+.forgotten-password a {
   text-decoration: none;
   color: black;
   font-size: 10px;
-  font-weight: bold; 
+  font-weight: bold;
 }
-.forgotten-password a:hover{
+.forgotten-password a:hover {
   color: blue;
 }
 /* bottom-section houses the login-btn and account sign-up */
-.bottom-section{
+.bottom-section {
   display: flex;
   gap: 3px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.login-btn{
+.form-message {
+  display: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  line-height: 1.4;
+}
+.form-message.is-visible {
+  display: block;
+}
+.form-message.error {
+  color: #8f1d22;
+  background-color: #fde7e8;
+  border: 1px solid #f4b8bc;
+}
+.form-message.success {
+  color: #176b2e;
+  background-color: #e7f7ec;
+  border: 1px solid #b4e4c1;
+}
+.login-btn {
   display: flex;
   align-items: center;
   gap: 6px;
@@ -132,10 +153,14 @@ margin-bottom: 20px;
   background: linear-gradient(135deg, #4facfe, #00fe2a);
   cursor: pointer;
 }
-.ph-arrow-right{
+.login-btn:disabled {
+  opacity: 0.75;
+  cursor: not-allowed;
+}
+.ph-arrow-right {
   font-size: 20px;
 }
-.bottom-section p a{
+.bottom-section p a {
   color: #4facfe;
   text-decoration: none;
   font-size: 10px;
