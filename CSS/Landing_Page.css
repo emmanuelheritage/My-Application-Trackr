@@ -7,7 +7,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 header {
-  background-color: #ffffff;
+  background-color: #F6F6F6;
   color: #000;
   padding: 0 15px;
   /* margin-top: 20px; */
@@ -341,6 +341,7 @@ header {
   font-family: "Arial", sans-serif;
   color: #333;
   border-top: 1px solid #eaeaea;
+  background-color: #F6F6F6;
 }
 
 .footer-container {
