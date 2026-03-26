@@ -1,79 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/80db182f15.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/80db182f15.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2"></script>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="CSS/profile-settings.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/profile-settings.css" />
     <title>Profile Settings</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- Header -->
-        <nav>
-            <div id="logo-links">
-                <a href="followUp.html">
-                    <div id="back">
-                        <i class="fa-solid fa-arrow-left"></i>
-                    </div>
-                </a>
-                <div id="logo">
-                <img src="Images/logo.png" alt="Logo Image">
-                <a href="\"><i class="fa-regular fa-house"></i></a>
-            </div> 
-            </div>
-            <div id="notif">
-                <a href=""><i class="fa-solid fa-bell"></i></a>
-                <a href=""><img src="Images\Rectangle 30.png" alt="Profile Picture"> </a>
-            </div>
-        </nav>
-       <main>
-
-    <!-- Profile Settings Card -->
-        <div id="profilesettings">
-
-    <!-- Profile Picture and Upload Profile Picture Button -->
-            <div id="profilechanges">
-                <div id="image"> 
-                    <img src="Images\Rectangle 30.png" alt="Profile Picture">
-                    <a href=""><button id="upload">Upload new photo</button></a>
-                </div>
-                <div id="input">
-                    <input type="text" placeholder="Name">
-                    <input type="text" placeholder="Email Address">
-                    <input type="text" placeholder="Phone Number">
-                </div>
-            </div>
-    <!-- Save, Options, Delete Account and Log Out Settings-->
-            <div id="options">
-                <div id="savechanges">
-                    <div id="buttons">
-                        <a href="">
-                            <button id="save">
-                                Save Changes
-                            </button>
-                        </a>
-                        <a href="">
-                            <button id="cancel">
-                                Cancel
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                 <div id="delete">
-                    <a href="\">
-                        Delete account
-                    </a>
-                    <a href="logout-pop-up.html">
-                        Log out
-                    </a>
-                 </div>  
-            </div>
-        
+    <nav>
+      <div id="logo-links">
+        <a href="followUp.html">
+          <div id="back">
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+        </a>
+        <div id="logo">
+          <img src="Images/logo.png" alt="Logo Image" />
+          <a href="mainboard.html"><i class="fa-regular fa-house"></i></a>
         </div>
-        
-       </main>
-</body>
+      </div>
+      <div id="notif">
+        <a href=""><i class="fa-solid fa-bell"></i></a>
+        <a href=""
+          ><img src="Images/Rectangle 30.png" alt="Profile Picture" />
+        </a>
+      </div>
+    </nav>
+    <main>
+      <!-- Profile Settings Card -->
+      <div id="profilesettings">
+        <!-- Profile Picture and Upload Profile Picture Button -->
+        <div id="profilechanges">
+          <div id="image">
+            <img
+              id="profilePreview"
+              src="Images/Rectangle 30.png"
+              alt="Profile Picture"
+            />
+
+            <input type="file" id="fileInput" accept="image/*" hidden />
+
+            <button id="upload">Upload new photo</button>
+          </div>
+
+          <div id="input">
+            <input type="text" id="name" name="name" placeholder="Name" />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email Address"
+            />
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              placeholder="Phone Number"
+            />
+          </div>
+        </div>
+        <!-- Save, Options, Delete Account and Log Out Settings-->
+        <div id="options">
+          <div id="savechanges">
+            <div id="buttons">
+              <a href="">
+                <button id="save">Save Changes</button>
+              </a>
+              <a href="">
+                <button id="cancel">Cancel</button>
+              </a>
+            </div>
+          </div>
+          <div id="delete">
+            <a href="\"> Delete account </a>
+            <a href="logout-pop-up.html"> Log out </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="JavaScript/profile-settings.js"></script>
+  </body>
 </html>
