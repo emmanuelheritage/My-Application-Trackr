@@ -31,8 +31,8 @@ body {
 .general-container {
   background-color: #f6f6f9;
   display: flex;
-  /* height: 800px;
-    width: 1200px; */
+  width: 100%;
+  padding: 10px;
   justify-content: center;
   align-items: center;
 }
@@ -85,10 +85,13 @@ body {
   padding: 12px 15px;
   border-radius: 8px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
 }
 
 .form-group input:focus {
   outline: none;
+  border-color: #407bff;
+  box-shadow: 0 0 0 2px rgba(64, 123, 255, 0.1);
 }
 
 .form-group label {
@@ -137,7 +140,9 @@ input[type="password"]::-webkit-strong-password-auto-fill-button {
   cursor: pointer;
   transition: opacity 0.2s ease;
 }
-
+.signup-button:hover {
+  opacity: 0.9;
+}
 .signup-button:disabled,
 .signup-button.is-loading {
   opacity: 0.7;
@@ -238,6 +243,9 @@ input[type="password"]::-webkit-strong-password-auto-fill-button {
   background-clip: text;
   font-size: 18px;
 }
+.google-btn:hover {
+  background-color: #f1f1f1;
+}
 
 .divider {
   display: flex;
@@ -278,4 +286,107 @@ input[type="password"]::-webkit-strong-password-auto-fill-button {
   color: #7c5ea3;
   text-decoration: none;
   font-weight: 400;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .form-container {
+    width: 90%;
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  .form-title h2 {
+    font-size: 22px;
+  }
+
+  .form-title p {
+    font-size: 14px;
+  }
+
+  .form-group label {
+    font-size: 14px;
+  }
+
+  .form-group input {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .signup-button {
+    padding: 14px;
+    font-size: 15px;
+  }
+
+  .google-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .form-container {
+    width: 100%;
+    margin: 0;
+    padding: 20px 15px;
+    border-radius: 6px;
+  }
+
+  .form-title h2 {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .form-title p {
+    font-size: 13px;
+  }
+
+  .form-group {
+    margin-top: 12px;
+  }
+
+  .form-group input {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .password-wrapper i {
+    font-size: 14px;
+  }
+
+  .signup-button {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .google-btn {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .divider {
+    font-size: 12px;
+  }
+
+  .accept-terms label {
+    font-size: 12px;
+  }
+
+  .sign-up p {
+    font-size: 12px;
+  }
+}
+
+/* Large Screens (1200px and above) */
+@media (min-width: 1200px) {
+  .form-container {
+    width: 700px;
+  }
 }
