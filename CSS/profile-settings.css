@@ -153,6 +153,11 @@ input {
   padding: 1rem;
   border-radius: 1.5rem;
 }
+#buttons
+{
+  display: flex;
+  gap: 1rem;
+}
 button {
   padding: 0.5em 1.5em;
   border: 0;
@@ -190,6 +195,10 @@ button {
   #input {
     width: 100%;
   }
+  #buttons {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 /* Mobile */
@@ -208,11 +217,6 @@ button {
   }
 
   button {
-    width: 100%;
-  }
-
-  #buttons {
-    flex-direction: column;
     width: 100%;
   }
 }
