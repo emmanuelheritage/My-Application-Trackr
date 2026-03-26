@@ -122,6 +122,7 @@ header {
 }
 .hero-section .content .buttons .login {
   background-color: #99d4dc;
+  padding: 10px 40px;
 }
 .hero-section .content .buttons .login:hover {
   background-color: #89bec5;
