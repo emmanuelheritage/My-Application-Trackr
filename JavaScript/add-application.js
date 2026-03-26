@@ -56,8 +56,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const payload = {
-      company,
+      companyName: company,
       position,
+      jobTitle: position,
       status,
       followUpDate,
     };
