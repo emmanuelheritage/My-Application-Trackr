@@ -1,61 +1,89 @@
+/* RESET */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: white;
+  background: #f5f5f5; /* softer background for contrast */
+  transition: background 0.3s ease;
 }
-/* This is the container having all the content */
+
+/* CONTAINER */
 .container {
   border: 2px solid lightblue;
-  width: 500px;
+  width: 90%;
+  max-width: 450px;
   padding: 30px;
   background-color: white;
-  border-radius: 6px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
-/* This head section carries the two paragraph texts above, google sign-up and continue with */
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* HEAD SECTION */
 .head-section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   justify-content: center;
+  gap: 5px;
 }
+
 .head-section p {
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 
 .head-section p:nth-child(2) {
-  font-size: 10px;
-  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: #555;
 }
+
 .app-trackr-head {
   background: linear-gradient(90deg, #4facfe, #00fe2a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .head-section button {
   display: flex;
   align-items: center;
   justify-content: center;
-  align-self: normal;
-  padding: 5px;
+  padding: 8px 12px;
   border: 1px solid rgba(128, 128, 128, 0.5);
   background: white;
   border-radius: 6px;
   margin-bottom: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
+
+.head-section button:hover {
+  background: #f0f0f0;
+}
+
 .head-section button a {
   text-decoration: none;
   color: black;
   font-weight: bold;
+  margin-left: 8px;
 }
-/* lines-p are the two line that surroun 'or continue with' */
+
+/* LINES */
 .lines-p {
   display: flex;
   justify-content: center;
@@ -63,105 +91,170 @@ body {
   gap: 10px;
   margin-bottom: 20px;
 }
+
 .left-line,
 .right-line {
-  width: 150px;
-  border: 1px solid rgba(128, 128, 128, 0.5);
+  flex: 1;
+  height: 1px;
+  background: rgba(128, 128, 128, 0.5);
 }
-/* email-pass-container carries both the email and password  */
+
+/* FORM */
 .email-password-container {
   display: flex;
-  gap: 12px;
   flex-direction: column;
+  gap: 15px;
 }
+
 .email-password-container input {
   width: 100%;
-  padding: 7px;
+  padding: 10px;
   border: 1px solid rgba(128, 128, 128, 0.5);
   border-radius: 6px;
   outline: none;
+  transition:
+    border 0.3s ease,
+    box-shadow 0.3s ease;
 }
+
+.email-password-container input:focus {
+  border-color: #4facfe;
+  box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+}
+
 .email-password-container label {
-  font-size: 12px;
+  font-size: 0.9rem;
   font-weight: bold;
 }
-/* password is the container housing the eye slash for positioning */
+
+/* PASSWORD TOGGLE */
 .password {
   position: relative;
 }
+
 .ph-eye-slash {
   position: absolute;
   color: grey;
-  top: 25px;
+  top: 65%;
   right: 15px;
+  transform: translateY(-50%);
   font-size: 16px;
-  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
+
+.ph-eye-slash:hover {
+  color: #4facfe;
+}
+
+/* FORGOTTEN PASSWORD */
 .forgotten-password {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   margin-top: 2px;
-  margin-bottom: 30px;
-  outline: none;
+  margin-bottom: 20px;
 }
+
 .forgotten-password a {
   text-decoration: none;
-  color: black;
-  font-size: 10px;
+  color: #333;
+  font-size: 0.8rem;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
+
 .forgotten-password a:hover {
-  color: blue;
+  color: #4facfe;
 }
-/* bottom-section houses the login-btn and account sign-up */
+
+/* BOTTOM SECTION */
 .bottom-section {
   display: flex;
-  gap: 3px;
   flex-direction: column;
-  justify-content: center;
+  gap: 10px;
   align-items: center;
 }
+
 .form-message {
   display: none;
   width: 100%;
   padding: 10px;
   border-radius: 6px;
-  font-size: 12px;
+  font-size: 0.8rem;
   line-height: 1.4;
+  transition: all 0.3s ease;
 }
+
 .form-message.is-visible {
   display: block;
 }
+
 .form-message.error {
   color: #8f1d22;
   background-color: #fde7e8;
   border: 1px solid #f4b8bc;
 }
+
 .form-message.success {
   color: #176b2e;
   background-color: #e7f7ec;
   border: 1px solid #b4e4c1;
 }
+
 .login-btn {
   display: flex;
   align-items: center;
-  gap: 6px;
-  padding: 6px 110px;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 0;
+  width: 100%;
   border: none;
   border-radius: 6px;
   color: white;
+  font-weight: bold;
   background: linear-gradient(135deg, #4facfe, #00fe2a);
   cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
+
+.login-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
 .login-btn:disabled {
-  opacity: 0.75;
+  opacity: 0.7;
   cursor: not-allowed;
 }
-.ph-arrow-right {
-  font-size: 20px;
-}
+
 .bottom-section p a {
   color: #4facfe;
   text-decoration: none;
-  font-size: 10px;
+  font-size: 0.8rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  .head-section p {
+    font-size: 1rem;
+  }
+
+  .email-password-container input {
+    padding: 8px;
+  }
+
+  .login-btn {
+    padding: 8px 0;
+  }
+
+  .left-line,
+  .right-line {
+    width: 40%;
+  }
 }
