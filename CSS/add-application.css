@@ -209,6 +209,23 @@ input::placeholder {
   color: white;
 }
 
+#status{
+    padding: 10px;
+}
+.applied{
+    background-color: #407BFF;
+}
+.interviewing{
+    background-color: yellow;
+}
+.rejected{
+    background-color: #e53e3e;
+    border-radius: 10px;
+}
+.offered{
+    background-color: #23E363;
+}
+
 /* RESPONSIVENESS */
 
 /* Tablets */
