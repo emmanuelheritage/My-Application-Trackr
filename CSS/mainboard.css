@@ -455,3 +455,74 @@ tbody td {
 .page-btn-flat:hover {
   color: var(--primary);
 }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1200px) {
+  .wrapper {
+    padding: 24px 12px 0;
+  }
+  .page-title {
+    font-size: 22px;
+  }
+  .stat-pill {
+    font-size: 0.85rem;
+    padding: 6px 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  nav {
+    gap: 8px;
+    padding: 0 12px;
+  }
+  .nav-link {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+  .btn-add {
+    padding: 6px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 16px 8px 0;
+  }
+  .search-box input {
+    width: 120px;
+  }
+  .page-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  nav {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 8px 8px;
+  }
+  .nav-logo img {
+    height: 32px;
+  }
+  .nav-links {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .stats-bar {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .header-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  .filter-tab {
+    padding: 4px 12px;
+  }
+  table {
+    min-width: 600px;
+  }
+}
