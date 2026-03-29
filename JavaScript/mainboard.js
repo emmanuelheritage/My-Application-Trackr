@@ -158,7 +158,7 @@ function renderPagination() {
 
 // ── ADD NEW APPLICATION ──
 document.querySelector(".btn-add").addEventListener("click", () => {
-  window.location.href = "editApplication.html";
+  window.location.href = "add-application.html";
 });
 
 // ── UPDATE STATS ──
