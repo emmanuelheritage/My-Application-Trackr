@@ -460,6 +460,14 @@ tbody td {
 .page-btn-flat:hover {
   color: var(--primary);
 }
+#welcome-note{
+  color:  #1c2333;
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 15px;
+font-style: italic;
+}
 
 /* ── RESPONSIVE ── */
 @media (max-width: 1200px) {

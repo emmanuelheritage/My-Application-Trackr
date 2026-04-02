@@ -5,6 +5,8 @@ const signupButton = signupForm.querySelector('button[type="submit"]');
 const defaultButtonLabel = signupButton.textContent;
 const formMessage = document.getElementById("formMessage");
 
+
+
 function showFormMessage(type, message) {
   formMessage.textContent = message;
   formMessage.classList.remove("error", "success");
@@ -63,9 +65,7 @@ signupForm.addEventListener("submit", async function (e) {
   const fullName = document.getElementById("fullName").value.trim();
   const email = document.getElementById("email").value.trim();
   const password = document.getElementById("password").value.trim();
-  const confirmPassword = document
-    .getElementById("confirmPassword")
-    .value.trim();
+  const confirmPassword = document.getElementById("confirmPassword").value.trim();
   const terms = document.getElementById("terms").checked;
 
   if (!fullName || !email || !password || !confirmPassword) {

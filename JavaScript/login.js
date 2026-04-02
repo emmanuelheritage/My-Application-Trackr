@@ -76,7 +76,9 @@ form.addEventListener("submit", async (e) => {
 
     if (data.user) {
       localStorage.setItem("user", JSON.stringify(data.user));
+      localStorage.setItem("username", data.user.fullName);
     }
+   
 
     showFormMessage("success", data.message || "Login successful!");
     setTimeout(() => {

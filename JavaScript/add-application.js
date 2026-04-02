@@ -39,10 +39,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const company = document.getElementById("company").value.trim();
     const position = document.getElementById("position").value.trim();
     const status = document.getElementById("status").value;
+    const dateApplied = document.getElementById("dateApplied").value;
     const followUpDate = document.getElementById("followUpDate").value;
-    const allowedStatuses = ["pending", "accepted", "rejected"];
+    const allowedStatuses = ["Applied", "Interviewing", "Offered", "Rejected"];
 
-    if (!company || !position || !status || !followUpDate) {
+    if (!company || !position || !status || !dateApplied || !followUpDate) {
       showFormMessage("error", "Please fill in all required fields.");
       return;
     }
@@ -50,16 +51,17 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!allowedStatuses.includes(status)) {
       showFormMessage(
         "error",
-        "Status must be pending, accepted, or rejected.",
+        "Status must be Applied, Interviewing, Offered  or Rejected.",
       );
       return;
-    }
+    } 
 
     const payload = {
       companyName: company,
       position,
       jobTitle: position,
       status,
+      dateApplied,
       followUpDate,
     };
 
@@ -76,6 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       const data = await response.json().catch(() => ({}));
+      // console.log(data);
 
       if (!response.ok) {
         if (response.status === 401 || response.status === 403) {
