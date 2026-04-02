@@ -17,7 +17,7 @@ Instead of juggling spreadsheets or notes, users can track everything in one pla
 
 - 📋 Add new applications with relevant details
 - ✏️ Edit and update application information
-- ❌ Delete applications بسهولة
+- ❌ Delete applications
 - 📊 Track application status (e.g. Applied, Interview, Rejected, Accepted)
 - 💾 Data stored locally in the browser (no backend required)
 - 📱 Fully responsive design (works on mobile & desktop)
