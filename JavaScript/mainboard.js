@@ -1,4 +1,18 @@
+
+
 const baseUrl = "https://my-application-tracker.onrender.com";
+
+// Display welcome message with username
+document.addEventListener("DOMContentLoaded", () => {
+  const username = localStorage.getItem("username").toUpperCase();
+
+  if (username) {
+    document.getElementById("welcome-note").textContent =
+      `Welcome ${username}....track all you job applications here`;
+  }
+});
+
+
 let applications = [];
 
 const ITEMS_PER_PAGE = 5;
