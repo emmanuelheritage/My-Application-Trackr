@@ -14,6 +14,13 @@ cancelBtn.addEventListener("click", () =>{
 
 // logout button action
 logoutBtn.addEventListener("click", () =>{
+  localStorage.removeItem("user");
+  localStorage.removeItem("authToken");
+  localStorage.removeItem("username");
+  const user = JSON.parse(localStorage.getItem("user"));
+  if (user) {
+    localStorage.removeItem(`profileImage_${user.email}`);
+  }
   alert("you have been logged out!");
 
   // Example redirect (optional)

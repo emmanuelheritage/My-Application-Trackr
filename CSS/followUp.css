@@ -5,6 +5,8 @@
 }
 body{
     background-color: #f6f6f6;
+    font-family: "Geist", sans-serif;
+
 }
 .nav-section{
     display: flex;
@@ -26,13 +28,13 @@ a{
     text-decoration: none;
 }
 .back-arrow{
-    font-size: 40px;
+    font-size: 30px;
     cursor: pointer;
     font-weight: 1000;
     color: black;
 }
 .icon{
-    font-size: 50px;
+    font-size: 30px;
     color: #407BFF;
     cursor: pointer;
 }
@@ -44,32 +46,37 @@ a{
 }
 .logo > img{
     object-fit: contain;
-    height: 40px;
+    height: 30px;
 }
 .nav-right{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 20px;
+}
+.nav-right > a{
+    background-color: #f6f6f6;
+    margin-right: auto;
+    padding: 0;
 }
 .notification-icon{
     position: relative;
 }
 .notification{
     position: absolute;
-    top: -3px;
-    right: -1px;
+    top: 0;
+    right: 0;
     background-color: #FF0000;
     color: #ffffff;
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 12px;
 }
-.user-icon{
+/* .user-icon{
    background-color: #ffffff;
     padding:0;
     border-radius: 8px;
@@ -77,7 +84,7 @@ a{
 .user-icon > i{
     font-size: 50px;
     color: #D9D9D9;
-}
+} */
 .follow-ups{
     display: flex;
     justify-content: center;
@@ -86,8 +93,7 @@ a{
     padding-right: 40px;
 }
 .follow-ups > h2{
-    font-family: poppins;
-    font-size: 40px;
+    font-size: 30px;
     padding: 0;
     margin-bottom:-4px;
 }
@@ -111,7 +117,7 @@ a{
     background-color: #23E363E5;
     color: #ffffff;
     border: none;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 500;
     cursor: pointer;
 }
@@ -120,7 +126,7 @@ a{
     background-color: #CA0D0D;
     color: #ffffff;
     border: none;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 500;
     cursor: pointer;
 }
@@ -135,7 +141,7 @@ a{
     color: white;
     border: none;
     border-radius: 10px;
-    font-size: 28px;
+    font-size: 22px;
     cursor: pointer;
     display: flex;
     gap: 10px;
