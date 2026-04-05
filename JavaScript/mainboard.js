@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (username) {
     document.getElementById("welcome-note").textContent =
-      `Welcome ${username}....track all you job applications here`;
+      `Welcome ${username}....track all your job applications here`;
   }
 });
 
