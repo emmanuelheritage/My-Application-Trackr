@@ -101,6 +101,7 @@ img {
   width: 20rem;
   transition: 0.3s ease;
   cursor: pointer;
+  border-radius: 50%;
 }
 #image img:hover {
   transform: scale(1.05);
@@ -156,7 +157,7 @@ input {
 #buttons
 {
   display: flex;
-  gap: 1rem;
+  gap: 10px;
 }
 button {
   padding: 0.5em 1.5em;
@@ -166,16 +167,39 @@ button {
 #save {
   font-size: 1.5rem;
   background-color: #407bff;
+  font-weight: 800;
 }
 #cancel {
   font-size: 1.5rem;
   background-color: #f40d11;
   padding: 0.5em 3.19em;
+  font-weight: 800;
 }
-#delete a {
+/* #delete a {
   font-size: 1.5rem;
   color: black;
   margin: 5px;
+} */
+ #delete{
+  display: flex;
+  gap: 10px;
+  padding-bottom: 20px ;
+ }
+.delete-btn{
+font-size: 1.5rem;
+font-weight: 800;
+  background-color: #f40d11;
+  padding: 0.5em 1.5em;
+  color: #d9d9d9;
+  cursor: pointer;
+}
+.logout-btn{
+  font-size: 1.5rem;
+  font-weight: 800;
+  background-color: #f40d11;
+  padding: 0.5em 2.5em;
+  color: #d9d9d9;
+  cursor: pointer;
 }
 
 /* RESPONSIVENESS */
@@ -199,6 +223,10 @@ button {
     flex-direction: column;
     width: 100%;
   }
+  #delete{
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 /* Mobile */
@@ -217,6 +245,9 @@ button {
   }
 
   button {
+    width: 100%;
+  }
+  #delete{
     width: 100%;
   }
 }

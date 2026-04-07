@@ -74,17 +74,24 @@ form.addEventListener("submit", async (e) => {
       localStorage.setItem("authToken", data.token);
     }
 
+
     if (data.user) {
       localStorage.setItem("user", JSON.stringify(data.user));
       localStorage.setItem("username", data.user.fullName);
     }
+    
+    if(data?.profileImage){
+      localStorage.setItem(`profileImage_${data.user.email}`, data.profileImage);
+    }
+   
    
 
     showFormMessage("success", data.message || "Login successful!");
     setTimeout(() => {
-      window.location.href = "mainboard.html";
+      window.location.href = "no-application-dashboard.html";
     }, 900);
   } catch (error) {
+    alert(error);
     showFormMessage(
       "error",
       "Unable to login right now. Please check your connection and try again.",

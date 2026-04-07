@@ -1,3 +1,9 @@
+  const user = JSON.parse(localStorage.getItem("user"));
+  if (!user){
+    window.location.href = "log-in.html"
+    alert("You need to log in to add application");
+  }
+
 document.addEventListener("DOMContentLoaded", () => {
   const baseUrl = "https://my-application-tracker.onrender.com";
   const form = document.getElementById("applicationForm");
@@ -5,6 +11,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const submitBtn = form.querySelector('button[type="submit"]');
   const defaultButtonLabel = submitBtn.textContent;
   const formMessage = document.getElementById("formMessage");
+  const user = JSON.parse(localStorage.getItem("user"));
+  const savedProfilePhoto = localStorage.getItem(`profileImage_${user.email}`);
+  const username = localStorage.getItem("username").toUpperCase();
+  const profileIcon = document.getElementById("profile-photo");
+
+//  User profile photo display
+  if (savedProfilePhoto){
+   profileIcon.src = savedProfilePhoto;
+  } else if (user && username){
+    const avatarUrl = `https://ui-avatars.com/api/?name=${encodeURIComponent(username)}&background=random&color=fff`
+    profileIcon.src = avatarUrl;
+  }
+
 
   function showFormMessage(type, message) {
     formMessage.textContent = message;
@@ -111,6 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
         data.message || "Application added successfully.",
       );
       form.reset();
+      window.location.href = "mainboard.html";
     } catch (error) {
       showFormMessage(
         "error",
@@ -120,6 +140,9 @@ document.addEventListener("DOMContentLoaded", () => {
       setLoadingState(false);
     }
   });
+  
+  // const profileIcon = document.getElementById("profile-photo")
+  // profileIcon.src =
 
   // Handle Cancel Button
   cancelBtn.addEventListener("click", () => {
